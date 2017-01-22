@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
   resources :employers
+  resources :jobs
+  resources :for_employers
+  resources :contact
+  resources :about
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
